@@ -1,0 +1,70 @@
+/* Style the body */
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style all buttons */
+button{
+    width: 220px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 1s;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+/* Style all inputs */
+input{
+    width: 120px;
+    height: 27px;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 5px;
+}
+
+input::placeholder{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+/* Style all select */
+select{
+    width: 120px;
+    height: 30px;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Style Ex-3 inputs */
+.player-inputs input{
+    margin: 4px 0;
+    width: 210px;
+}
+
+/* Style Ex-3 button */
+.player-inputs button{
+    /* width: 108px; */
+    margin-top: 10px;
+}
+
+/* Style Ex 13 button to display */
+#button_to_display{
+    display: none;
+}
+
+/* Style Ex-20 print result */
+#inc_dec_num{
+    padding: 0 10px;
+}
+
+/* Style Ex-23 list position */
+#books_list{
+text-align: left !important;
+}

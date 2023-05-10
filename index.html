@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="input_range_style.css">
+    <title>Java Script Exercise</title>
+</head>
+<body>
+    <h1>Java Script Exercise</h1>
+    <!-- Ex 1 -->
+    <h4>תרגיל 1</h4>
+    <div>
+        <form action="">
+            <label for="">Check if your number is <strong>even</strong> or <strong>odd</strong>:</label>
+            <input placeholder="type a number" type="text" id="even_odd">
+            <p id="evorod"></p>
+        </form>
+    </div>
+    <hr>
+<!-- Ex 2 -->
+<h4>תרגיל 2</h4>
+    <div>
+        <form action="">
+            <label for="">Check the average of your numbers:</label>
+            <input placeholder="split numbers with ," type="text" class="average" oninput="calculate()">
+            <p class="average_result"></p>
+        </form>
+    </div>
+    <hr>
+    <h4>תרגיל 3</h4>
+<!-- Ex 3 -->
+    <div class="player-inputs">
+        <h2>Who have the highest number game</h2>
+        <p>Please enter any number</p>
+            <label for="">Player-1 name</label>
+            <div><input type="text" id="user_name1"></div>
+            <label for="" id="user_input1" onmousemove="myfunction()">Enter a number</label>
+            <div><input type="text" id="user_sc1"></div>
+            <label for="">Player-2 name</label>
+            <div><input type="text" id="user_name2"></div>
+            <label for="" id="user_input2" onmousemove="myfunction()">Enter a number</label>
+            <div><input type="text" id="user_sc2"></div>
+            <button onclick="playerFunction()">Send</button>
+            <p id="average_ply_result"></p>
+    </div>
+    <hr>
+<!-- Ex 4 -->
+<h4>תרגיל 4</h4>
+    <div>
+        <h2>מה השעה</h2>
+        <p id="my_time"></p>
+        <p id="time_greeting"></p>
+    </div>
+    <hr>
+<!-- Ex 5 -->
+<h4>תרגיל 5</h4>
+    <div>
+        <h2> תוכנית לחישוב כדאיות ורווח מהפעלת רכבת </h2>
+        <input type="number" placeholder="מספר קרונות" id="train_wag">
+        <select id="time_dep">
+          <option value="Mon">בוקר</option>
+          <option value="Non">צהריים</option>
+          <option value="Evning">ערב</option>
+        </select>
+        <input type="number" placeholder="משכורת נהג" id="driver_sel">
+        <button onclick="trainFunction()">Check Price</button>
+        <p id="train_total_sum"></p>
+    </div>
+    <hr>
+<!-- Ex 6 -->
+<h4>תרגיל 6</h4>
+<div>
+    <h2>Toyota car models</h2>
+    <select id="toyota_mod">
+        <option value="Corolla" id="corolla_mod">Corolla</option>
+        <option value="Camry">Camry</option>
+        <option value="Prius">Prius</option>
+      </select>
+      <input type="number" placeholder="מספר תשלומים" id="payment_option">
+      <button onclick="toyotaModels()">Check Price</button>
+      <p id="or_price"></p>
+      <p id="de_price"></p>
+      <p id="pay_per_mon_price"></p>
+</div>
+<hr>
+<!-- Ex 7 -->
+<h4>תרגיל 7</h4>
+<div>
+    <h2>בדיקת מקום פנוי בקוו מונית ירושלים לתל אביב</h2>
+    <input type="number" placeholder="מספר נוסעים" id="taxi_person">
+    <button onclick="taxiJerToTel()">Check availability</button>
+    <p id="taxi_cap"></p>
+</div>
+<hr>
+<!-- Ex 8 -->
+<h4>תרגיל 8</h4>
+<div>
+    <h2>טיול שנתי בית ספר גני הצבי</h2>
+    <input type="number" placeholder="מספר תלמידים" id="travel_person">
+    <button onclick="travelPer()">Check</button>
+    <p id="sec_help"></p>
+    <p id="par_help"></p>
+    <p id="first_help"></p>
+</div>
+<hr>
+<!-- Ex 9 is printed in the console -->
+<h4>תרגיל 9</h4>
+<div>
+    <h2>Check what is foo in the console</h2>
+    <p>Type Thursday or thursday or 5</p>
+    <input type="text" placeholder="Enter value" id="conditional_value">
+    <button onclick="myFoo()">Check foo</button>
+</div>
+<hr>
+<!-- Ex 10 -->
+<h4>תרגיל 10</h4>
+<div>
+    <h2>Check your BMI</h2>
+    <input type="text" placeholder="Enter your Kg" id="bmi_kg">
+    <input type="text" placeholder="Enter your Hight" id="bmi_hight">
+    <button onclick="bmiCalculator()">Check your BMI</button>
+    <p id="bmi_result"></p>
+    <p id="bmi_notice"></p>
+</div>
+<hr>
+<!-- Ex 11 is printed in the console -->
+<h4>תרגיל 11</h4>
+<div>
+    <h2>Check the type of foo, result in the console</h2>
+    <button onclick="typeOfFoo()">Check foo</button>
+</div>
+<hr>
+<!-- Ex 12 -->
+<h4>תרגיל 12</h4>
+<div>
+    <h2>Check the root of 100</h2>
+    <button onclick="rootMyNum()">Check root</button>
+    <p id="root_result"></p>
+</div>
+<hr>
+<!-- Ex 13 -->
+<h4>תרגיל 13</h4>
+<div>
+    <button onclick="myButton()">Click me to see my brother</button>
+    <button id="button_to_display">I am the brother</button>
+</div>
+<hr>
+<!-- Ex 14 -->
+<h4>תרגיל 14</h4>
+<div>
+    <button onclick="newPageOpen()">Click me to open a cool page</button>
+</div>
+<hr>
+<!-- Ex 15 -->
+<h4>תרגיל 15</h4>
+<div>
+    <button onclick="mydate()">Current date</button>
+    <p id="current_date"></p>
+</div>
+<hr>
+<!-- Ex 16 -->
+<h4>תרגיל 16</h4>
+<div>
+    <h2>Enter a number</h2>
+    <input type="number" placeholder="Enter a number" id="person_number">
+    <button onclick="perNum()">Repeatedly your number</button>
+    <p id="repeatedly_number"></p>
+</div>
+<hr>
+<!-- Ex 17 -->
+<h4>תרגיל 17</h4>
+<div>
+    <h2>Enter something</h2>
+    <input type="text" placeholder="Enter something" id="person_any">
+    <button onclick="perMulti10()">Repeatedly your input</button>
+    <p id="repeatedly_input"></p>
+</div>
+<hr>
+<!-- Ex 18 -->
+<h4>תרגיל 18</h4>
+<div>
+    <input type="text" placeholder="Enter a number" id="first_num">
+    <input type="text" placeholder="Enter a number" id="second_num">
+    <button onclick="getTwoNumber()">Which number is bigger</button>
+</div>
+<hr>
+<!-- Ex 19 -->
+<h4>תרגיל 19</h4>
+<div>
+    <input type="text" placeholder="סכום לתשלום" id="total_bill">
+    <label for="Tip" id="tip_value"></label>
+    <input type="range" name="Tip" id="my_tip" value="10" min="10" max="50" step="5">
+    <button onclick="whatIsMyTip()">סכום לתשלום</button>
+    <span id="total_with_tip"></span>
+</div>
+<hr>
+<!-- Ex 20 -->
+<h4>תרגיל 20</h4>
+<div>
+    <h2> Increase and Decrease</h2>
+    <button id="inc_num">Increase</button>
+    <button id="dec_num">Decrease</button>
+    <button id="rest_num">Rest</button>
+    <span id="inc_dec_num">0</span>
+</div>
+<hr>
+<!-- Ex 21 -->
+<h4>תרגיל 21</h4>
+<div>
+    <h2>Randomly quotes</h2>
+    <button onclick="getRandomQuote()">Click to refrash</button>
+    <p id="rendom_quote"></p>
+</div>
+<hr>
+<!-- Ex 22 -->
+<h4>תרגיל 22</h4>
+<div>
+    <h2>Student names printed in the console</h2>
+    <button onclick="getStudentNames()">Student names</button>
+</div>
+<hr>
+<!-- Ex 23 -->
+<h4>תרגיל 23</h4>
+<div>
+    <input type="text" placeholder="שם הספר" id="book_name">
+    <button onclick="addBooks()">Add a new book</button>
+    <button onclick="bookName()">Available books</button>
+    <div id="books_list"></div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

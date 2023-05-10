@@ -1,0 +1,24 @@
+/* Input range styles*/
+/* styling the slider */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 8px;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 50px;
+}
+/* styling the thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 13px;
+  width: 13px;
+  margin-top: -3px;
+  border-radius: 10px;
+  cursor: pointer;
+  will-change: contents;
+  transition: all 0.2s ease;
+}
+/* Position the range slider and thumb */
+#my_tip{
+    position: relative;
+    top: 10px;
+}
